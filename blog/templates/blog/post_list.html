@@ -1,0 +1,12 @@
+<header>
+    <h1><a href="/">Preciouswyn Blog</a></h1>
+</header>
+
+{% for post in posts %}
+    <article>
+        <h3><a href="">{{ post.title }}</a></h3>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <time>published: {{ post.published_date }}</time>
+
+    </article>
+{% endfor %}
